@@ -1,33 +1,10 @@
 "use client";
+import { siteConfig } from "@config/site";
 import { Button, Card, CardBody, CardHeader, Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-
-const Data = [
-  {
-    title: "NextUI",
-    description: "A React UI Library",
-    icon: "/deion.jpg",
-    image: "/deion.jpg",
-    link: "https://nextui.org",
-  },
-  {
-    title: "NextUI",
-    icon: "/deion.jpg",
-    description: "A React UI Library",
-    image: "/deion.jpg",
-    link: "https://nextui.org",
-  },
-  {
-    title: "NextUI",
-    icon: "/deion.jpg",
-    description: "A React UI Library",
-    image: "/deion.jpg",
-    link: "https://nextui.org",
-  },
-];
 
 function Work() {
   return (
@@ -38,10 +15,10 @@ function Work() {
       whileInView={{ y: 0, opacity: 1 }}
       className="flex flex-col items-center justify-center w-full gap-5 mt-10 lg:w-1/2"
     >
-      <div className="flex flex-col items-start justify-start w-full gap-10 md:flex-row">
+      <div className="flex flex-col items-start justify-start w-full gap-10 lg:flex-row">
         <h6 className=" text-neutral-500 md:block">Work</h6>
         <div className="flex flex-col w-full gap-3 text-sm">
-          {Data.map((item, index) => (
+          {siteConfig.work.map((item, index) => (
             <Link key={index} href={item.link}>
               <Card
                 shadow="none"

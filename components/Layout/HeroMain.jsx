@@ -18,25 +18,8 @@ import Link from "next/link";
 import { Avatar, Button, ButtonGroup, Image } from "@nextui-org/react";
 import HackerText from "@components/ui/hackertext";
 import { motion } from "framer-motion";
-
+import { siteConfig } from "@config/site";
 const currentTime = moment().format("LT");
-const data = [
-  {
-    icon: <TwitterIcon size={30} strokeWidth={2} absoluteStrokeWidth />,
-    name: "Twitter",
-    href: "https://twitter.com/shadcn",
-  },
-  {
-    icon: <InstagramIcon size={30} strokeWidth={2} absoluteStrokeWidth />,
-    name: "Instagram",
-    href: "https://twitter.com/shadcn",
-  },
-  {
-    icon: <GithubIcon size={30} strokeWidth={2} absoluteStrokeWidth />,
-    name: "Instagram",
-    href: "https://twitter.com/shadcn",
-  },
-];
 
 function UserInfo() {
   return (
@@ -48,7 +31,7 @@ function UserInfo() {
         whileInView={{ y: 0, opacity: 1 }}
       >
         <Avatar
-          src="/deion.webp"
+          src={siteConfig.profileImage}
           className="object-cover w-20 h-20 text-large"
         />
       </motion.div>
@@ -60,7 +43,7 @@ function UserInfo() {
           whileInView={{ y: 0, opacity: 1 }}
           className="text-2xl tracking-tighter text-center text-neutral-100"
         >
-          Deion D&apos;souza
+          {siteConfig.name}
         </motion.h1>
         <motion.h2
           viewport={{ once: true }}
@@ -69,7 +52,7 @@ function UserInfo() {
           whileInView={{ y: 0, opacity: 1 }}
           className="text-xl tracking-tight text-center text-neutral-400"
         >
-          Front-end developer at Tikanga
+          {siteConfig.description}
         </motion.h2>
       </div>
     </div>
@@ -78,7 +61,7 @@ function UserInfo() {
 
 function HeroMain() {
   return (
-    <section className="flex flex-col items-center justify-center w-full gap-5 px-10 lg:max-w-lg">
+    <section className="flex flex-col items-center justify-center w-full gap-5 lg:max-w-lg">
       <motion.h1
         viewport={{ once: true }}
         initial={{ y: 40, opacity: 0.5 }}
@@ -99,7 +82,7 @@ function HeroMain() {
         <span>
           <div className="w-2 h-2 bg-teal-400 rounded-full animate-pulse" />
         </span>
-        <p>Available for new opportunities</p>
+        <p>{siteConfig.availablity}</p>
       </motion.div>
       <motion.div
         viewport={{ once: true }}
@@ -108,7 +91,7 @@ function HeroMain() {
         whileInView={{ y: 0, opacity: 1 }}
         className="flex flex-row gap-5"
       >
-        {data.map((item, index) => (
+        {siteConfig.links.map((item, index) => (
           <Link
             key={index}
             href={item.href}

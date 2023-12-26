@@ -17,7 +17,7 @@ const monoSpace = Space_Mono({
 export const metadata = {
   title: {
     default: "Portfolio",
-    template: `%s | Portfolio`,
+    template: `%s`,
   },
   description:
     "NoteVault is here to elevate your learning journey with a comprehensive and user-friendly repository designed exclusively for St. Aloysius students.  ",
@@ -30,7 +30,9 @@ export default function RootLayout({ children }) {
         {" "}
         <Providers>
           <Navbar />
-          <div className="ml-0  md:ml-[4rem]">{children}</div>
+          <div className="ml-0 grid place-items-center  md:ml-[4rem]">
+            {children}
+          </div>
         </Providers>
       </body>
     </html>

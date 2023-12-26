@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center w-full min-h-screen py-10 pb-28 md:pb-10">
       <div className="flex flex-col items-center justify-center ">
-        <HeroMain />
-        <div className="flex flex-col items-center justify-center px-10 md:px-0">
+        <div className="flex flex-col items-center justify-center px-4 ">
+          <HeroMain />
           <About />
           <Work />
           <Time />
