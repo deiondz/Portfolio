@@ -1,9 +1,19 @@
-import { Inter } from "next/font/google";
+import { Poppins, Space_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@components/Layout/Navbar";
+import { Providers } from "./providers";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-inter",
+});
 
+const monoSpace = Space_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-mono",
+});
 export const metadata = {
   title: {
     default: "Portfolio",
@@ -16,9 +26,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        <div className="ml-0 md:ml-[4rem]">{children}</div>
+      <body className={`${monoSpace.variable} ${inter.variable}`}>
+        {" "}
+        <Providers>
+          <Navbar />
+          <div className="ml-0  md:ml-[4rem]">{children}</div>
+        </Providers>
       </body>
     </html>
   );

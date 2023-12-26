@@ -1,3 +1,4 @@
+import { Tooltip } from "@nextui-org/react";
 import { Briefcase, Home, Mailbox, Search, User } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -62,7 +63,7 @@ const data = [
 
 function Navbar() {
   return (
-    <nav className="md:w-[4rem] h-[4rem]  bottom-0  w-screen fixed md:h-screen border-t-[0.01px] md:border-t-0 md:border-r-[0.01px] border-neutral-700 ">
+    <nav className="md:w-[4rem] h-[4rem] z-40   bottom-0 bg-[#232323]  w-screen fixed md:h-screen border-t-[0.01px] md:border-t-0 md:border-r-[0.01px] border-neutral-700 ">
       <div className="flex flex-row items-center h-full gap-5 justify-evenly md:justify-center md:flex-col">
         {data.map((item, index) => (
           <Link
@@ -70,7 +71,16 @@ function Navbar() {
             key={index}
             className="flex flex-col items-center justify-center "
           >
-            {item.icon}
+            <Tooltip
+              showArrow={true}
+              placement="left"
+              offset={20}
+              color="foreground"
+              className=" text-neutral-200"
+              content={item.name}
+            >
+              {item.icon}
+            </Tooltip>
           </Link>
         ))}
       </div>

@@ -77,6 +77,8 @@
 
 body {
   background-color: var(--background);
+  color: white;
+  font-family: var(--font-inter);
 }
 
 body::-webkit-scrollbar {
@@ -88,5 +90,9 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background: #5c5555;
+}
+
+.mono {
+  font-family: var(--font-mono);
 }
