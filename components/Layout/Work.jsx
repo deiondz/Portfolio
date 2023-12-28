@@ -54,16 +54,18 @@ function Work() {
               </Card>
             </Link>
           ))}
-          <Button
-            endContent={
-              <span>
-                <ArrowRight color="#7a7575" size={20} strokeWidth={1.75} />
-              </span>
-            }
-            className="hover:bg-neutral-700 font-medium bg-[#282828] border text-neutral-200 border-[#343434]"
-          >
-            View more
-          </Button>
+          <Link href="/work/NextUI" className="w-full">
+            <Button
+              endContent={
+                <span>
+                  <ArrowRight color="#7a7575" size={20} strokeWidth={1.75} />
+                </span>
+              }
+              className="hover:bg-neutral-700 font-medium bg-[#282828] border text-neutral-200 border-[#343434]"
+            >
+              View more
+            </Button>
+          </Link>
         </div>
       </div>
     </motion.section>
