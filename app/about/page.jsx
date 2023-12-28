@@ -53,7 +53,7 @@ function IntroSection() {
 
 function Page() {
   return (
-    <main className="flex flex-col items-center justify-center max-w-full min-h-screen px-4 py-20 pb-28 md:pb-10">
+    <main className="flex flex-col items-center justify-center max-w-full min-h-screen px-4 py-10 md:py-20 pb-28 md:pb-10">
       <div className="flex flex-col items-start justify-start w-full gap-2 lg:w-1/2">
         <h1 className="text-2xl font-semibold ">About</h1>
         <h4 className="text-xl font-normal text-neutral-400">
