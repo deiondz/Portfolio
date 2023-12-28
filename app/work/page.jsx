@@ -1,10 +1,13 @@
-import React from "react";
+"use client";
+import WorksSideBar from "@components/Work/Layout/Works";
+import React, { useState } from "react";
 
 function Page() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <main className="flex flex-col items-center justify-center w-full min-h-screen py-10 pb-28 md:pb-10">
-      Page
-    </main>
+    <>
+      <WorksSideBar setIsOpen={setIsOpen} isOpen={isOpen} />
+    </>
   );
 }
 

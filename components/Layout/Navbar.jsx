@@ -21,7 +21,6 @@ function Navbar() {
                   : "text-neutral-600"
               }`}
             onClick={() => {
-              console.log(item.name.toLowerCase());
               setActive(item.name.toLowerCase());
             }}
           >

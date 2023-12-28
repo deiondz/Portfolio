@@ -93,6 +93,18 @@ body::-webkit-scrollbar-thumb {
   background: #5c5555;
 }
 
+section::-webkit-scrollbar {
+  width: 0rem;
+}
+
+section::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+section::-webkit-scrollbar-thumb {
+  background: #5c5555;
+}
+
 .mono {
   font-family: var(--font-mono);
 }

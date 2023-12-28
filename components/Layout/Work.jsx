@@ -4,7 +4,6 @@ import { Button, Card, CardBody, CardHeader, Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import React from "react";
 
 function Work() {
   return (
@@ -18,26 +17,26 @@ function Work() {
       <div className="flex flex-col items-start justify-start w-full gap-10 lg:flex-row">
         <h6 className=" text-neutral-500 md:block">Work</h6>
         <div className="flex flex-col w-full gap-3 text-sm">
-          {siteConfig.work.map((item, index) => (
-            <Link key={index} href={item.link}>
+          {siteConfig.work.slice(0, 3).map((item, index) => (
+            <Link key={index} href={`/work/${item.title.replace(" ", "-")}`}>
               <Card
                 shadow="none"
                 fullWidth
                 className="  hover:bg-neutral-700 bg-[#282828] border border-[#343434]"
               >
                 <CardHeader className="flex gap-3">
-                  <Image
-                    alt="nextui logo"
-                    height={40}
-                    className="object-cover aspect-square"
-                    radius="sm"
-                    src={item.icon}
-                    width={40}
-                  />
+                  <div className=" w-[50px] aspect-square">
+                    <Image
+                      alt="nextui logo"
+                      className="object-cover aspect-square"
+                      radius="sm"
+                      src={item.icon}
+                    />
+                  </div>
                   <div className="flex flex-col">
                     <p className="text-md">{item.title}</p>
-                    <p className="text-small text-default-500">
-                      {item.description}
+                    <p className="overflow-hidden text-sm text-gray-500 line-clamp-1">
+                      {item.shortDescription}
                     </p>
                   </div>
                 </CardHeader>

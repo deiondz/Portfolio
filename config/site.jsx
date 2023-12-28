@@ -48,7 +48,7 @@ export const siteConfig = {
         />
       ),
       name: "Work",
-      link: "/work",
+      link: "/work/NextUI",
     },
     {
       icon: (
@@ -74,18 +74,6 @@ export const siteConfig = {
       name: "Contact",
       link: "/contact",
     },
-    {
-      icon: (
-        <Search
-          strokeWidth={1.5}
-          absoluteStrokeWidth
-          size={30}
-          className="transition-all "
-        />
-      ),
-      name: "Search",
-      link: "/search",
-    },
   ],
 
   links: [
@@ -107,25 +95,71 @@ export const siteConfig = {
   ],
   work: [
     {
-      title: "NextUI",
-      description: "A React UI Library",
+      title: "NextUI adwwad",
+      role: "Frontend Developer",
+      outcome: "A React UI Library",
+      p: [
+        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+      ],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       icon: "/deion.jpg",
       image: "/deion.jpg",
       link: "https://nextui.org",
+      dummy: {
+        username: "deiondz",
+        password: "deiondz",
+      },
     },
     {
       title: "NextUI",
       icon: "/deion.jpg",
       description: "A React UI Library",
+      p: [
+        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+      ],
       image: "/deion.jpg",
       link: "https://nextui.org",
     },
     {
       title: "NextUI",
+      p: [
+        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+      ],
       icon: "/deion.jpg",
       description: "A React UI Library",
       image: "/deion.jpg",
       link: "https://nextui.org",
+    },
+    {
+      title: "NextUI ddaw",
+      p: [
+        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+      ],
+      icon: "/deion.jpg",
+      description: "A React UI Library",
+      image: "/deion.jpg",
+      link: "https://nextui.org",
+    },
+    {
+      title: "NextUI",
+      p: [
+        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+      ],
+      icon: "/deion.jpg",
+      description: "A React UI Library",
+      image: "/deion.jpg",
+      link: "nextui",
     },
   ],
   time: [
