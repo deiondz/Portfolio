@@ -20,7 +20,7 @@ export const metadata = {
     template: `%s`,
   },
   description:
-    "NoteVault is here to elevate your learning journey with a comprehensive and user-friendly repository designed exclusively for St. Aloysius students.  ",
+    "Deion's Portfolio website. A place where I can showcase my work and projects.",
 };
 
 export default function RootLayout({ children }) {
