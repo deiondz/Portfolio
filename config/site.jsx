@@ -36,7 +36,7 @@ export const siteConfig = {
         />
       ),
       name: "Home",
-      link: "https://www.ps3cfw.com/cool.php?item=64176595",
+      link: "/",
     },
     {
       icon: (
@@ -48,7 +48,7 @@ export const siteConfig = {
         />
       ),
       name: "Work",
-      link: "https://www.ps3cfw.com/cool.php?item=64176595",
+      link: "/work",
     },
     {
       icon: (
@@ -60,7 +60,7 @@ export const siteConfig = {
         />
       ),
       name: "About",
-      link: "https://www.ps3cfw.com/cool.php?item=64176595",
+      link: "/about",
     },
     {
       icon: (
@@ -72,7 +72,7 @@ export const siteConfig = {
         />
       ),
       name: "Contact",
-      link: "https://www.ps3cfw.com/cool.php?item=64176595",
+      link: "/contact",
     },
     {
       icon: (
@@ -84,7 +84,7 @@ export const siteConfig = {
         />
       ),
       name: "Search",
-      link: "https://www.ps3cfw.com/cool.php?item=64176595",
+      link: "/search",
     },
   ],
 
@@ -111,21 +111,21 @@ export const siteConfig = {
       description: "A React UI Library",
       icon: "/deion.jpg",
       image: "/deion.jpg",
-      link: "https://www.ps3cfw.com/cool.php?item=64176595",
+      link: "https://nextui.org",
     },
     {
       title: "NextUI",
       icon: "/deion.jpg",
       description: "A React UI Library",
       image: "/deion.jpg",
-      link: "https://www.ps3cfw.com/cool.php?item=64176595",
+      link: "https://nextui.org",
     },
     {
       title: "NextUI",
       icon: "/deion.jpg",
       description: "A React UI Library",
       image: "/deion.jpg",
-      link: "https://www.ps3cfw.com/cool.php?item=64176595",
+      link: "https://nextui.org",
     },
   ],
   time: [
