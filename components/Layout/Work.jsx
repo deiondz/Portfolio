@@ -61,7 +61,7 @@ function Work() {
                   <ArrowRight color="#7a7575" size={20} strokeWidth={1.75} />
                 </span>
               }
-              className="hover:bg-neutral-700 font-medium bg-[#282828] border text-neutral-200 border-[#343434]"
+              className="hover:bg-neutral-700 w-full font-medium bg-[#282828] border text-neutral-200 border-[#343434]"
             >
               View more
             </Button>
