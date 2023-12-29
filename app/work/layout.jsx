@@ -1,4 +1,3 @@
-import BurgerMenu from "@components/Work/Layout/BurgerMenu";
 import WorksSideBar from "@components/Work/Layout/Works";
 import { GlobalContextProvider } from "@contexts/WorkContext";
 
@@ -10,7 +9,6 @@ function layout({ children }) {
         <div className="hidden md:block">
           <WorksSideBar />
         </div>
-        <BurgerMenu />
 
         <div className="ml-0 grid place-items-center  md:ml-[20rem]">
           {children}

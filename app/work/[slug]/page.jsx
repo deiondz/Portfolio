@@ -1,16 +1,18 @@
 "use client";
 import { Image } from "@nextui-org/react";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { siteConfig } from "@config/site";
 import Link from "next/link";
 import { useGlobalContext } from "@contexts/WorkContext";
-import BurgerMenu from "@components/Work/Layout/BurgerMenu";
 function Page({ params }) {
   const { setData } = useGlobalContext();
   const pageData = siteConfig.work.find(
     (page) => page.title.replace(" ", "-") === params.slug
   );
-  setData(pageData);
+  useEffect(() => {
+    setData(pageData);
+  }, [setData, pageData]);
+
   return (
     <main className="flex flex-col items-center justify-start w-full min-h-screen py-10 pb-28 md:pb-10">
       <div className="flex flex-col items-start justify-start w-full gap-5 px-4 md:px-10 lg:w-[60%]">
