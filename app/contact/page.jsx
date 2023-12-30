@@ -1,5 +1,7 @@
+import CopyPasteButton from "@components/Copy";
 import { Button, Divider, Input, Textarea } from "@nextui-org/react";
 import { FilesIcon, MailIcon, Send, TwitterIcon } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 function Page() {
@@ -24,27 +26,25 @@ function Page() {
             <p>Available for new opportunities</p>
           </div>
         </div>
-        <div className="flex flex-col justify-between w-full gap-2 md:flex-row">
-          <Button
-            radius="sm"
-            color="secondary"
-            className="w-full font-medium border-2 bg-neutral-800 border-neutral-700"
-            endContent={
-              <FilesIcon size={20} strokeWidth={1.5} absoluteStrokeWidth />
-            }
-          >
+        <div className="flex flex-col w-full gap-2 md:flex-row">
+          <CopyPasteButton copyText="deiondsouza12@gmail.com">
             Copy Email
-          </Button>
-          <Button
-            radius="sm"
-            color="secondary"
-            className="w-full font-medium border-2 bg-neutral-800 border-neutral-700"
-            endContent={
-              <TwitterIcon size={20} strokeWidth={1.5} absoluteStrokeWidth />
-            }
+          </CopyPasteButton>
+          <Link
+            className="w-full"
+            href="https://twitter.com/messages/compose?recipient_id=905371150888210432"
           >
-            DM me
-          </Button>
+            <Button
+              radius="sm"
+              color="secondary"
+              className="w-full font-medium border-2 bg-neutral-800 border-neutral-700"
+              endContent={
+                <TwitterIcon size={20} strokeWidth={1.5} absoluteStrokeWidth />
+              }
+            >
+              DM me
+            </Button>
+          </Link>
         </div>
         <div className="flex items-center justify-center w-full ">
           <span className="text-sm text-neutral-500">or</span>

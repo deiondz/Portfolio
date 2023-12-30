@@ -1,3 +1,4 @@
+import Header from "@components/Work/Layout/Header";
 import WorksSideBar from "@components/Work/Layout/Works";
 import { GlobalContextProvider } from "@contexts/WorkContext";
 
@@ -6,6 +7,7 @@ function layout({ children }) {
   return (
     <div className="w-full">
       <GlobalContextProvider>
+        <Header />
         <div className="hidden md:block">
           <WorksSideBar />
         </div>

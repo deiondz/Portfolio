@@ -48,7 +48,7 @@ export const siteConfig = {
         />
       ),
       name: "Work",
-      link: "/work/NextUI",
+      link: "/work",
     },
     {
       icon: (

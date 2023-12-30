@@ -20,6 +20,7 @@
     "moment": "^2.29.4",
     "next": "14.0.4",
     "react": "^18",
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
     "react-text-hacked": "^1.0.5",

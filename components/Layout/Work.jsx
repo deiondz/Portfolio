@@ -35,9 +35,6 @@ function Work() {
                   </div>
                   <div className="flex flex-col">
                     <p className="text-md">{item.title}</p>
-                    <p className="overflow-hidden text-sm text-gray-500 line-clamp-1">
-                      {item.shortDescription}
-                    </p>
                   </div>
                 </CardHeader>
                 <CardBody className="p-3 pt-0 overflow-visible ">
@@ -54,7 +51,7 @@ function Work() {
               </Card>
             </Link>
           ))}
-          <Link href="/work/NextUI" className="w-full">
+          <Link href="/work" className="w-full">
             <Button
               endContent={
                 <span>

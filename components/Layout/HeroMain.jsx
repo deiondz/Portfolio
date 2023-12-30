@@ -19,6 +19,7 @@ import { Avatar, Button, ButtonGroup, Image } from "@nextui-org/react";
 import HackerText from "@components/ui/hackertext";
 import { motion } from "framer-motion";
 import { siteConfig } from "@config/site";
+import CopyPasteButton from "@components/Copy";
 const currentTime = moment().format("LT");
 
 function UserInfo() {
@@ -111,21 +112,23 @@ function HeroMain() {
           whileInView={{ x: 0, opacity: 1 }}
           className="w-full"
         >
-          <Button
-            radius="sm"
-            className="w-full font-medium"
-            color="default"
-            endContent={
-              <MailIcon
-                size={20}
-                strokeWidth={1.5}
-                color="#3a3636"
-                absoluteStrokeWidth
-              />
-            }
-          >
-            Contact me
-          </Button>
+          <Link href="/contact">
+            <Button
+              radius="sm"
+              className="w-full font-medium"
+              color="default"
+              endContent={
+                <MailIcon
+                  size={20}
+                  strokeWidth={1.5}
+                  color="#3a3636"
+                  absoluteStrokeWidth
+                />
+              }
+            >
+              Contact me
+            </Button>
+          </Link>
         </motion.div>
         <motion.span
           viewport={{ once: true }}
@@ -143,16 +146,9 @@ function HeroMain() {
           whileInView={{ x: 0, opacity: 1 }}
           className="w-full "
         >
-          <Button
-            radius="sm"
-            color="secondary"
-            className="w-full font-medium border-2 bg-neutral-800 border-neutral-700"
-            endContent={
-              <FilesIcon size={20} strokeWidth={1.5} absoluteStrokeWidth />
-            }
-          >
+          <CopyPasteButton copyText="deiondsouza12@gmail.com">
             Copy Email
-          </Button>
+          </CopyPasteButton>
         </motion.div>
       </div>
       <motion.div
