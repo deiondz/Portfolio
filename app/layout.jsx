@@ -21,6 +21,12 @@ export const metadata = {
   },
   description:
     "Deion's Portfolio website. A place where I can showcase my work and projects.",
+  ogimage: {
+    url: "/self/header.png",
+    width: 1200,
+    height: 630,
+    alt: "Deion's Portfolio",
+  },
 };
 
 export default function RootLayout({ children }) {

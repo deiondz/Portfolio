@@ -5,6 +5,8 @@ import Time from "@components/Layout/Time";
 
 export const metadata = {
   title: "Home",
+  description:
+    "Experience a showcase of finely-crafted websites and applications that blend cutting-edge technology with intuitive design.",
 };
 export default function Home() {
   return (
