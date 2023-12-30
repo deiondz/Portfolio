@@ -29,9 +29,9 @@ export default function IntroSection() {
           <h6 className=" text-neutral-500 md:block">Intro</h6>
           <div className="md:w-[80%] w-full h-full">
             <Image
-              src="/deion.jpg"
+              src="/self/header.png"
               alt=""
-              className="object-cover w-full h-full aspect-[12/5]"
+              className="object-cover object-center w-full h-full aspect-[12/5]"
             />
             <div className="py-10 pb-0 text-sm space-y-7">
               <p>

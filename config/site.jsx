@@ -95,71 +95,74 @@ export const siteConfig = {
   ],
   work: [
     {
-      title: "NextUI adwwad",
-      role: "Frontend Developer",
-      outcome: "A React UI Library",
+      title: "Note Vault",
+      outcome:
+        "Developed an efficent and secure note repository for my college.",
       p: [
-        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
-        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
-        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+        "The Note Vault is a user-friendly web application designed to serve as a centralized hub for storing and accessing college notes. It aims to streamline the organization and accessibility of academic materials for students. Built using Next.js, Tailwind CSS, and NextUI component library, this platform offers a seamless experience for storing lecture notes, past papers, and study resources.",
+        "The primary goal of the CollegeNote Repository is to simplify the management of academic resources for students. By offering a user-centric platform with an intuitive interface and organized storage, students can easily access and utilize notes and past question papers to enhance their learning and preparation.",
+        "This project is aimed at optimizing the student learning experience, providing a centralized repository for academic materials, and facilitating efficient studying through easy access to course notes and previous exam papers.",
       ],
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "The Note Vault is a user-friendly web application designed to serve as a centralized hub for storing and accessing college notes. It aims to streamline the organization and accessibility of academic materials for students. Built using Next.js, Tailwind CSS, and NextUI component library, this platform offers a seamless experience for storing lecture notes, past papers, and study resources.",
       icon: "/deion.jpg",
-      image: "/deion.jpg",
-      link: "https://nextui.org",
-      dummy: {
-        username: "deiondz",
-        password: "deiondz",
-      },
+      image: "/project/notevault.png",
+      link: "https://notevaultrepo.vercel.app",
+      keyfeatures: [
+        {
+          header: "Note Storage",
+          point:
+            "Easily upload, organize, and categorize lecture notes by subject, topic, or date.",
+        },
+        {
+          header: "Previous Year Question Papers",
+          point:
+            "Access a repository of past year question papers sorted by courses and subjects.",
+        },
+        {
+          header: "User-Friendly Interface",
+          point:
+            "Utilizes NextUI components for a visually appealing and intuitive user interface.",
+        },
+        {
+          header: "Search and Filter",
+          point:
+            "Efficiently search for specific notes or papers using keywords or filters.",
+        },
+        {
+          header: "Responsive Design",
+          point:
+            "Ensures usability across various devices and screen sizes for convenience.",
+        },
+      ],
+      technologiesUsed: [
+        {
+          header: "Next.js",
+          point: "For efficient server-side rendering and routing.",
+        },
+        {
+          header: "Tailwind",
+          point:
+            "Provides a utility-first CSS framework for styling components.",
+        },
+        {
+          header: "Responsive Design",
+          point:
+            "Leveraged for pre-designed components, enhancing the app's interface and functionality.",
+        },
+      ],
     },
     {
-      title: "NextUI",
-      icon: "/deion.jpg",
-      description: "A React UI Library",
+      title: "Costa Homestay",
+      icon: "/project/costa.png",
+      description: "A landing page for a homestay business in Mangalore.",
       p: [
-        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
-        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
-        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
+        "The CostaHomestay Landing Page is a bespoke web interface crafted specifically for promoting and showcasing the unique offerings of a homestay business. Developed with Next.js, Tailwind CSS, and NextUI component library, this landing page embodies elegance and functionality, aiming to captivate visitors and potential guests.",
+        "The CostaHomestay Landing Page is designed to be a captivating gateway for potential guests, inviting them to explore the warmth and comfort that CostaHomestay offers. By combining sleek design elements, user-friendly navigation, and informative content, the landing page aims to convert visitors into guests by compellingly presenting the homestay's unique offerings and experience.",
+        "This project serves as a virtual introduction to CostaHomestay, offering a glimpse into the beauty of the accommodations and the surrounding environment. Its primary goal is to entice visitors, encouraging them to engage further, inquire, and ultimately choose CostaHomestay for their next retreat or vacation experience.",
       ],
-      image: "/deion.jpg",
-      link: "https://nextui.org",
-    },
-    {
-      title: "NextUI",
-      p: [
-        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
-        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
-        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
-      ],
-      icon: "/deion.jpg",
-      description: "A React UI Library",
-      image: "/deion.jpg",
-      link: "https://nextui.org",
-    },
-    {
-      title: "NextUI ddaw",
-      p: [
-        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
-        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
-        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
-      ],
-      icon: "/deion.jpg",
-      description: "A React UI Library",
-      image: "/deion.jpg",
-      link: "https://nextui.org",
-    },
-    {
-      title: "NextUI",
-      p: [
-        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
-        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
-        "The goal was to create a seamless and engaging user experience that would elevate Gamma's online presence, drive conversions, and strengthen customer loyalty. Through an iterative design and development process, the entire e-commerce platform was transformed, resulting in a more intuitive, visually appealing, and efficient online shopping experience for Gamma's customers.",
-      ],
-      icon: "/deion.jpg",
-      description: "A React UI Library",
-      image: "/deion.jpg",
-      link: "nextui",
+      image: "/project/costa.png",
+      link: "https://costahomestay.com",
     },
   ],
   time: [
@@ -184,7 +187,7 @@ export const siteConfig = {
       Company: "Papa Ocus",
 
       Description:
-        "I had the pleasure of working with Shirish Bajpai, also known as PapaOcus, on his personal brand. I primarily assisted him on various projects and helped create content for both Twitter threads and Instagram. I enjoyed being part of him and seeing his vision come to life as we collaborated on each task. It was a rewarding experience that taught me many valuable skills in the world of social media.",
+        "I had the pleasure of working with Shirish Bajpai, also known as PapaOcus, on his personal brand. I primarily assisted him on various projects and helped create content for both Twitter threads and Instagram. I enjoyed being part of his team and seeing his vision come to life as we collaborated on each task. It was a rewarding experience that taught me many valuable skills in the world of social media.",
     },
   ],
   Education: [
@@ -192,8 +195,7 @@ export const siteConfig = {
       Title: " St. Aloysius College, Mangalore-575003",
       Date: "May 2023 - Present",
       Company: "Bachelor of Computer Application",
-      Description:
-        "As a Frontend Developer, my role involves collaborating with the development team to create and implement frontend designs within the specified timeframe. I am responsible for designing and testing responsive UIs using React frameworks for various projects.",
+      Description: "",
     },
   ],
 };

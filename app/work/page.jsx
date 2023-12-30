@@ -17,21 +17,14 @@ function page() {
             href={`/work/${item.title.replace(" ", "-")}`}
           >
             <div className=" rounded-xl p-3 gap-2 hover:bg-neutral-700 transition-all h-full flex flex-col justify-between  bg-[#282828] border border-[#343434]">
-              <div className="flex flex-col items-start h-full gap-3 ">
+              <div className="flex flex-col items-start h-full gap-1 ">
                 <div className="flex items-start w-full gap-2 ">
-                  <Image
-                    alt="nextui logo"
-                    className="object-cover w-[40px] aspect-square"
-                    radius="sm"
-                    src={item.icon}
-                  />
                   <div className="flex flex-col items-start">
-                    <p className="text-md">{item.title}</p>
-                    <p className="text-xs text-neutral-500">DSDS</p>
+                    <p className="font-semibold text-md">{item.title}</p>
                   </div>
                 </div>
                 <div className="flex flex-col h-full">
-                  <p className="h-full text-sm line-clamp-3 text-neutral-200">
+                  <p className="h-full text-sm line-clamp-3 text-neutral-500">
                     {item.description}
                   </p>
                 </div>

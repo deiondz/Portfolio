@@ -24,17 +24,14 @@ function Work() {
                 fullWidth
                 className="  hover:bg-neutral-700 bg-[#282828] border border-[#343434]"
               >
-                <CardHeader className="flex gap-3">
-                  <div className=" w-[50px] aspect-square">
-                    <Image
-                      alt="nextui logo"
-                      className="object-cover aspect-square"
-                      radius="sm"
-                      src={item.icon}
-                    />
-                  </div>
-                  <div className="flex flex-col">
-                    <p className="text-md">{item.title}</p>
+                <CardHeader className="flex items-start gap-3">
+                  <div className="flex items-start w-full gap-2 ">
+                    <div className="flex flex-col items-start">
+                      <p className="font-semibold text-large">{item.title}</p>
+                      <p className="text-xs line-clamp-2 text-neutral-500">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
                 </CardHeader>
                 <CardBody className="p-3 pt-0 overflow-visible ">

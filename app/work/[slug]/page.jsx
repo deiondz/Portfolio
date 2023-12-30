@@ -17,7 +17,7 @@ function Page({ params }) {
     <main className="flex flex-col items-center justify-start w-full min-h-screen py-10 pb-28 md:pb-10">
       <div className="flex flex-col items-start justify-start w-full gap-5 px-4 md:px-10 lg:w-[60%]">
         <Image
-          src="/deion.jpg"
+          src={pageData.image}
           alt=""
           className="object-cover  w-full h-full aspect-[16/9]"
         />
@@ -38,6 +38,7 @@ function Page({ params }) {
               {pageData.link && (
                 <Link
                   href={pageData.link}
+                  target="_blank"
                   className="underline text-sky-300 underline-offset-2"
                 >
                   {pageData.link}
@@ -59,6 +60,38 @@ function Page({ params }) {
             {pageData.p.map((item, index) => (
               <p key={index}>{item}</p>
             ))}
+            {pageData.keyfeatures && (
+              <div className="flex flex-col gap-3">
+                <h6 className="font-medium text-large">Key features</h6>
+                <ul className="flex flex-col gap-5 list-decimal list-inside">
+                  {pageData.keyfeatures.map((item, index) => (
+                    <li key={index}>
+                      <span className="font-semibold">{item.header} : </span>
+                      <span className="font-normal text-neutral-400">
+                        {" "}
+                        {item.point}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {pageData.technologiesUsed && (
+              <div className="flex flex-col gap-3">
+                <h6 className="font-medium text-large">Technologies used</h6>
+                <ul className="flex flex-col gap-2 list-disc list-inside">
+                  {pageData.technologiesUsed.map((item, index) => (
+                    <li key={index}>
+                      <span className="font-semibold">{item.header} : </span>
+                      <span className="font-normal text-neutral-400">
+                        {" "}
+                        {item.point}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </div>
