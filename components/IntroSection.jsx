@@ -29,7 +29,7 @@ export default function IntroSection() {
           <h6 className=" text-neutral-500 md:block">Intro</h6>
           <div className="md:w-[80%] w-full h-full">
             <Image
-              src="/self/header.png"
+              src="/self/Header.png"
               alt=""
               className="object-cover object-center w-full h-full aspect-[12/5]"
             />
