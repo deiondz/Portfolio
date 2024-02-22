@@ -3,11 +3,6 @@ import About from "@components/Layout/About";
 import Work from "@components/Layout/Work";
 import Time from "@components/Layout/Time";
 
-export const metadata = {
-  title: "Home",
-  description:
-    "Experience a showcase of finely-crafted websites and applications that blend cutting-edge technology with intuitive design.",
-};
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center w-full min-h-screen py-10 pb-28 md:pb-10">
