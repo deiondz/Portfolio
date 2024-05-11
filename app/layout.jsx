@@ -33,7 +33,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${monoSpace.variable} ${inter.variable}`}>
-        {" "}
         <Providers>
           <Navbar />
           <div className="ml-0 grid place-items-center  md:ml-[4rem]">

@@ -27,7 +27,7 @@ function Work() {
                 <CardHeader className="flex items-start gap-3">
                   <div className="flex items-start w-full gap-2 ">
                     <div className="flex flex-col items-start">
-                      <p className="font-semibold text-large">{item.title}</p>
+                      <h1 className="font-semibold text-large">{item.title}</h1>
                       <p className="text-xs line-clamp-2 text-neutral-500">
                         {item.description}
                       </p>

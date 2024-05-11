@@ -29,7 +29,7 @@ function Navbar() {
               placement="left"
               offset={20}
               color="foreground"
-              className=" text-neutral-200"
+              className="text-neutral-200"
               content={item.name}
             >
               {item.icon}
