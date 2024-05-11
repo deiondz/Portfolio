@@ -1,8 +1,8 @@
+import ContactForm from "@components/Contact/contact";
 import CopyPasteButton from "@components/Copy";
-import { Button, Divider, Input, Textarea } from "@nextui-org/react";
-import { FilesIcon, MailIcon, Send, TwitterIcon } from "lucide-react";
+import { Button } from "@nextui-org/react";
+import { TwitterIcon } from "lucide-react";
 import Link from "next/link";
-import React from "react";
 
 function Page() {
   return (
@@ -49,45 +49,7 @@ function Page() {
         <div className="flex items-center justify-center w-full ">
           <span className="text-sm text-neutral-500">or</span>
         </div>
-        <form action="" method="post" className="flex flex-col w-full gap-3">
-          <div className="flex flex-col items-start justify-start w-full gap-2 md:flex-row">
-            <Input
-              label="Name"
-              placeholder="John Doe"
-              className="w-full dark"
-              required
-            />
-            <Input
-              label="Email"
-              placeholder="youremail@gmail.com"
-              className="w-full dark"
-              required
-              type="email"
-            />
-          </div>
-          <div>
-            <Textarea
-              label="Message"
-              placeholder="Hello there!"
-              className="w-full dark"
-              required
-              textarea
-            />
-          </div>
-          <div>
-            <Button
-              radius="sm"
-              type="submit"
-              color="secondary"
-              className="w-full font-medium border-2 bg-neutral-800 border-neutral-700"
-              endContent={
-                <Send size={20} strokeWidth={1.5} absoluteStrokeWidth />
-              }
-            >
-              Send your message
-            </Button>
-          </div>
-        </form>
+        <ContactForm />
       </div>
     </main>
   );
