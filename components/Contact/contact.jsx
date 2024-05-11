@@ -11,7 +11,7 @@ import { useState } from "react";
 const ContactFormSchema = z.object({
   name: z.string().min(2).max(50),
   email: z.string().email(),
-  message: z.string().min(1).max(1000),
+  message: z.string().min(1),
 });
 
 export default function ContactForm() {
