@@ -31,10 +31,8 @@ function UserInfo() {
         transition={{ delay: 0.1, duration: 0.5, ease: "easeInOut" }}
         whileInView={{ y: 0, opacity: 1 }}
       >
-        <Avatar
-          src={siteConfig.profileImage}
-          className="object-cover w-20 h-20 text-large"
-        />
+
+        <img src={siteConfig.profileImage} className="object-cover rounded-full w-20 h-20 text-large" />
       </motion.div>
       <div className="py-2">
         <motion.h1

@@ -35,29 +35,17 @@ export default function IntroSection() {
             />
             <div className="py-10 pb-0 text-sm space-y-7">
               <p>
-                I'm Deion D'Souza, a Front-end dev based in Mangalore, India,
-                and I currently serve as a frontend developer at Tikanga. I'm
-                passionate about using design to solve real-world problems and
-                create meaningful experiences that enhance people's lives.
+                I'm Deion D'Souza, a front-end developer based in Mangalore, India, currently working at Tikanga. I’m focused on using design to create practical and enjoyable user experiences.
               </p>
               <p>
                 Currently pursuing a Bachelor's degree in Computer Application,
                 I've honed my skills through years of experience as a developer
-                and graphic designer. I firmly believe that design should be
+                and graphic designer. I believe that design should be
                 user-centric, and I always keep the end-user in mind when
-                creating products. My focus at Tikanga is on developing products
-                that are both functional and aesthetically pleasing.
+                creating products.
               </p>
               <p>
-                When I'm not working, I love to watch cinema and immerse myself
-                in new genre and styles of cinema. I also stay up-to-date with
-                the latest advancements in technology and design.
-              </p>
-              <p>
-                I'm proud to be part of the talented team at Tikanga and excited
-                about the work we've accomplished together. I'm committed to
-                continuing to push the boundaries of product design and create
-                products that make a real difference in people's lives.
+                Outside of work, I’m a film enthusiast and enjoy exploring different styles and genres.
               </p>
             </div>
           </div>

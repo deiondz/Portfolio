@@ -4,15 +4,14 @@ import {
   HomeIcon,
   InstagramIcon,
   MailboxIcon,
-  Search,
   TwitterIcon,
-  User,
+  User
 } from "lucide-react";
 
 export const siteConfig = {
   name: "Deion D'Souza",
   profileImage: "/deion.jpg",
-  description: "Front-end developer at Tikanga",
+  description: "Software Developer",
   availablity: "Available for new opportunities",
   brief: [
     `I'm Deion D'Souza, a Front-end dev based in Mangalore, India.`,
@@ -167,27 +166,11 @@ export const siteConfig = {
   ],
   time: [
     {
-      Title: "Frontend Web Developer",
+      Title: "Software Development Engineer",
       Date: "May 2023 - Present",
       Company: "Tikanga",
       Description:
-        "As a Frontend Developer, my role involves collaborating with the development team to create and implement frontend designs within the specified timeframe. I am responsible for designing and testing responsive UIs using React frameworks for various projects.",
-    },
-    {
-      Title: "Assistant Video Editor",
-      Date: "Jul 2022 - Aug 2022 ",
-      Company: "Martin Noronha - Stoa",
-
-      Description:
-        "I had the opportunity to work with Martin Noronha as an assistant video editor for Stoa, a company aimed at providing business education. During my time there, I worked on a range of projects such as Instagram and Facebook adverts, podcasts and short form content. It was exciting to hone my skills in editing and also get creative with different kinds of media formats.",
-    },
-    {
-      Title: "Social Media Manager",
-      Date: "May 2022 - Aug 2022",
-      Company: "Papa Ocus",
-
-      Description:
-        "I had the pleasure of working with Shirish Bajpai, also known as PapaOcus, on his personal brand. I primarily assisted him on various projects and helped create content for both Twitter threads and Instagram. I enjoyed being part of his team and seeing his vision come to life as we collaborated on each task. It was a rewarding experience that taught me many valuable skills in the world of social media.",
+        "I work with the development team to bring frontend designs to life on time, making sure they look great and work smoothly on any device. My job is to design and test user interfaces using React Next.js for various projects.",
     },
   ],
   Education: [
