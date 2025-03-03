@@ -5,7 +5,7 @@ import {
   InstagramIcon,
   MailboxIcon,
   TwitterIcon,
-  User
+  User,
 } from "lucide-react";
 
 export const siteConfig = {
@@ -14,8 +14,8 @@ export const siteConfig = {
   description: "Software Developer",
   availablity: "Available for new opportunities",
   brief: [
-    `I'm Deion D'Souza, a Front-end dev based in Mangalore, India.`,
-    "With a rich background spanning over 3 years in design, my commitment lies in crafting visually captivating and user-friendly designs that consistently surpass client expectations.",
+    `I'm Deion D'Souza, an SDE based in Mangalore, India.`,
+    "With over three years of experience in design and software development, I am dedicated to crafting visually stunning and user-friendly solutions that consistently exceed client expectations.",
     "Whether you're looking for a new website, a redesign, or a custom web app, I'm here to help.",
   ],
   location: {
@@ -151,18 +151,6 @@ export const siteConfig = {
         },
       ],
     },
-    {
-      title: "Costa Homestay",
-      icon: "/project/costa.png",
-      description: "A landing page for a homestay business in Mangalore.",
-      p: [
-        "The CostaHomestay Landing Page is a bespoke web interface crafted specifically for promoting and showcasing the unique offerings of a homestay business. Developed with Next.js, Tailwind CSS, and NextUI component library, this landing page embodies elegance and functionality, aiming to captivate visitors and potential guests.",
-        "The CostaHomestay Landing Page is designed to be a captivating gateway for potential guests, inviting them to explore the warmth and comfort that CostaHomestay offers. By combining sleek design elements, user-friendly navigation, and informative content, the landing page aims to convert visitors into guests by compellingly presenting the homestay's unique offerings and experience.",
-        "This project serves as a virtual introduction to CostaHomestay, offering a glimpse into the beauty of the accommodations and the surrounding environment. Its primary goal is to entice visitors, encouraging them to engage further, inquire, and ultimately choose CostaHomestay for their next retreat or vacation experience.",
-      ],
-      image: "/project/costa.png",
-      link: "https://costahomestay.com",
-    },
   ],
   time: [
     {
@@ -170,7 +158,21 @@ export const siteConfig = {
       Date: "May 2023 - Present",
       Company: "Tikanga",
       Description:
-        "I work with the development team to bring frontend designs to life on time, making sure they look great and work smoothly on any device. My job is to design and test user interfaces using React Next.js for various projects.",
+        "Work with the development team to bring frontend designs to life on time, making sure they look great and work smoothly on any device. My job is to design and test user interfaces using React Next.js for various projects.",
+    },
+    {
+      Title: "Tech and Creative Lead",
+      Date: "Dec 2024 - Feb 2025",
+      Company: "TEDxStAloysius",
+      Description:
+        "Developed software to streamline registration payments by integrating a payment gateway for seamless ticket purchases. Additionally, led the branding initiative for the TEDx event, creating a cohesive visual identity and digital assets. Working closely with cross-functional teams, ensured smooth operations and aligned technical efforts with the event’s creative vision.",
+    },
+    {
+      Title: "Freelance Software Developer & Tech Consultant",
+      Date: "June 2024 - Present",
+      Company: "Remote",
+      Description:
+        "Developed custom software solutions for businesses, including web and mobile applications, built and integrated payment systems and automation tools, worked with companies to create scalable and efficient tech products, and provided consulting on software architecture, UI/UX design, and business automation.",
     },
   ],
   Education: [
