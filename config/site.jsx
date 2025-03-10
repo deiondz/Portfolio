@@ -293,7 +293,7 @@ export const siteConfig = {
         "Work with the development team to bring frontend designs to life on time, making sure they look great and work smoothly on any device. My job is to design and test user interfaces using React Next.js for various projects.",
     },
     {
-      Title: "Tech and Creative Lead",
+      Title: "Software Lead",
       Date: "Dec 2024 - Feb 2025",
       Company: "TEDxStAloysius",
       Description:
