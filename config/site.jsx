@@ -142,6 +142,16 @@ export const siteConfig = {
             "Serves as the database for efficiently storing and retrieving attendee data.",
         },
         {
+          header: "Clerk",
+          point: "Integrated for secure user authentication and authorization.",
+        },
+        {
+          header: "Razorpay API",
+          point:
+            "Used for seamless payment processing and ticket sales management.",
+        },
+
+        {
           header: "Drizzle ORM",
           point: "Ensures structured and efficient database interactions.",
         },
@@ -153,6 +163,65 @@ export const siteConfig = {
           header: "Webhooks",
           point:
             "Implemented for real-time payment verification and instant attendee notifications.",
+        },
+      ],
+    },
+    {
+      title: "BinSense Waste Analytics",
+      outcome:
+        "Still in development, BinSense is a waste management system that uses AI to analyze waste metrics, such as waste generation in tonnes, and categorize waste into different types, including e-waste, toxic waste, wet waste, and dry waste.",
+      p: [
+        "BinSense is a waste management system that uses AI to analyze waste metrics, such as waste generation in tonnes, and categorize waste into different types, including e-waste, toxic waste, wet waste, and dry waste.",
+        "This platform plans on integrating with IoT waste bins that capture images of disposed waste, which are then analyzed using machine learning models to classify and segregate waste automatically.",
+        "The goal of BinSense is to provide real-time waste tracking, automate segregation, and optimize waste disposal for organizations, ultimately reducing landfill waste and enhancing sustainability practices.",
+      ],
+      description:
+        "BinSense is a waste analytics platform that uses AI-driven image analysis to categorize and track waste, offering real-time insights for efficient waste management. It integrates with IoT waste collection devices to automate the classification and segregation process.",
+      icon: "/deion.jpg",
+      image:
+        "https://www.upwork.com/att/download/portfolio/persons/uid/964929488448684032/profile/projects/files/84851d89-9003-43f7-b631-f460891e90ad",
+      link: "https://binco-tau.vercel.app",
+      keyfeatures: [
+        {
+          header: "AI-Powered Waste Classification",
+          point:
+            "Uses LLMs to analyze and categorize waste into different types.",
+        },
+        {
+          header: "IoT Integration",
+          point:
+            "Connects with smart waste bins to automate data collection and segregation.",
+        },
+        {
+          header: "Real-Time Waste Tracking",
+          point:
+            "Monitors waste generation and categorization through a user-friendly dashboard.",
+        },
+        {
+          header: "Automated Reports",
+          point:
+            "Generates detailed reports on waste management trends and efficiency.",
+        },
+      ],
+      technologiesUsed: [
+        {
+          header: "Next.js",
+          point:
+            "Used as the frontend framework for building the web dashboard.",
+        },
+        {
+          header: "ShadCN",
+          point:
+            "Utilized for crafting a seamless and intuitive UI experience.",
+        },
+        {
+          header: "Supabase",
+          point:
+            "Stores and manages waste data efficiently in a structured format.",
+        },
+        {
+          header: "Gemini AI",
+          point: "Powers the AI-driven waste classification and analysis.",
         },
       ],
     },

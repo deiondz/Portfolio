@@ -6,10 +6,17 @@ import Link from "next/link";
 import { useGlobalContext } from "@contexts/WorkContext";
 function Page({ params }) {
   const { setData } = useGlobalContext();
+  const normalizeSlug = (str) =>
+    str
+      .toLowerCase()
+      .normalize("NFD") // Normalize accents
+      .replace(/[\u0300-\u036f]/g, "") // Remove diacritics
+      .replace(/[^a-z0-9]+/g, "-") // Replace non-alphanumeric characters with hyphens
+      .replace(/^-+|-+$/g, ""); // Trim leading/trailing hyphens
+
+  const decodedSlug = decodeURIComponent(params.slug); // Fix %20 issue
   const pageData = siteConfig.work.find(
-    (page) =>
-      page.title.toLowerCase().replace(/\s+/g, "-") ===
-      params.slug.toLowerCase()
+    (page) => normalizeSlug(page.title) === normalizeSlug(decodedSlug)
   );
 
   useEffect(() => {
@@ -26,39 +33,64 @@ function Page({ params }) {
         />
         <div className="space-y-10">
           <h1 className="text-2xl">{pageData.title}</h1>
-          <div className="flex flex-row gap-6 text-[15px]">
-            <div className="flex flex-col gap-3 text-neutral-500">
-              {pageData.client && <h6>Client</h6>}
-              {pageData.role && <h6>Role</h6>}
-              {pageData.outcome && <h6>Outcome</h6>}
-              {pageData.link && <h6>Link</h6>}
-              {pageData.dummy && <h6>Dummy login</h6>}
-            </div>
-            <div className="flex flex-col gap-3 text-[15px] text-neutral-200">
-              {pageData.client && <p>{pageData.client}</p>}
-              {pageData.role && <p>{pageData.role}</p>}
-              {pageData.outcome && <p>{pageData.outcome}</p>}
-              {pageData.link && (
+          <div className="grid gap-y-3 text-[15px] text-neutral-200">
+            {pageData.client && (
+              <div className="flex items-start gap-3">
+                <h6 className="flex-shrink-0 w-32 text-left text-neutral-500">
+                  Client
+                </h6>
+                <p className="flex-grow">{pageData.client}</p>
+              </div>
+            )}
+
+            {pageData.role && (
+              <div className="flex items-start gap-3">
+                <h6 className="flex-shrink-0 w-32 text-left text-neutral-500">
+                  Role
+                </h6>
+                <p className="flex-grow">{pageData.role}</p>
+              </div>
+            )}
+
+            {pageData.outcome && (
+              <div className="flex items-start gap-3">
+                <h6 className="flex-shrink-0 w-32 text-left text-neutral-500">
+                  Outcome
+                </h6>
+                <p className="flex-grow leading-relaxed max-w-prose">
+                  {pageData.outcome}
+                </p>
+              </div>
+            )}
+
+            {pageData.link && (
+              <div className="flex items-start gap-3">
+                <h6 className="flex-shrink-0 w-32 text-left text-neutral-500">
+                  Link
+                </h6>
                 <Link
                   href={pageData.link}
                   target="_blank"
-                  className="underline text-sky-300 underline-offset-2"
+                  className="flex-grow underline break-words text-sky-300 underline-offset-2"
                 >
                   {pageData.link}
                 </Link>
-              )}
-              {pageData.dummy && (
-                <p className="flex gap-2">
-                  <span className=" text-neutral-400">
-                    Username : {pageData.dummy.username}
-                  </span>
-                  <span className=" text-neutral-400">
-                    Password : {pageData.dummy.password}
-                  </span>
-                </p>
-              )}
-            </div>
+              </div>
+            )}
+
+            {pageData.dummy && (
+              <div className="flex items-start gap-3">
+                <h6 className="flex-shrink-0 w-32 text-left text-neutral-500">
+                  Dummy login
+                </h6>
+                <div className="flex flex-col flex-grow gap-1 text-neutral-400">
+                  <span>Username: {pageData.dummy.username}</span>
+                  <span>Password: {pageData.dummy.password}</span>
+                </div>
+              </div>
+            )}
           </div>
+
           <div className="flex flex-col text-[15px] w-full space-y-10 ">
             {pageData.p.map((item, index) => (
               <p key={index}>{item}</p>
