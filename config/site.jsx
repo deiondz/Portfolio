@@ -94,9 +94,72 @@ export const siteConfig = {
   ],
   work: [
     {
+      title: "Oasis Ticketing System",
+      outcome:
+        "Developed a custom ticketing system to streamline TEDx event management at St. Aloysius (Deemed to be University), Mangaluru.",
+      p: [
+        "Organizing an event as big as TEDx in a university as large as St. Aloysius (Deemed to be University), Mangaluru comes with many moving parts, and one of our biggest challenges was efficiently managing ticket sales and attendee data collection.",
+        "In the past, we relied on Excel sheets and Google Forms to handle payments, which was inefficient and led to several issues. Additionally, for our previous TEDx event, we spent ₹30,000 on a ticketing system and website, only to face inefficiencies and delays in accessing real-time data.",
+        "To solve this, I built a custom ticketing system called Oasis that automated the entire process—from ticket purchases to attendee data collection—ensuring smooth ticket distribution, real-time insights, and a seamless event experience.",
+      ],
+      description:
+        "Oasis is a custom-built ticketing system designed to streamline TEDx event management by automating ticket sales, attendee data collection, and real-time insights. Built using Next.js and Supabase, it replaces inefficient past methods and provides a seamless experience for both organizers and attendees.",
+      icon: "/deion.jpg",
+      image:
+        "https://media.licdn.com/dms/image/v2/D4D22AQF3Nep2-D0l9w/feedshare-shrink_2048_1536/B4DZVmS8ZlG8As-/0/1741177998477?e=1744243200&v=beta&t=-fP2gkrHUhHsrOnGBkrNR5HdEpwPeyVUGJYARINzfLQ",
+      link: "",
+      keyfeatures: [
+        {
+          header: "Instant Ticket Confirmations",
+          point:
+            "Ensures smooth ticket distribution with instant purchase confirmations.",
+        },
+        {
+          header: "Custom Data Collection",
+          point:
+            "Collects personalized attendee data for a better event experience.",
+        },
+        {
+          header: "Real-Time Attendee Insights",
+          point:
+            "Provides instant access to attendee and ticket sales data for decision-making.",
+        },
+        {
+          header: "Seamless Check-Ins",
+          point:
+            "Enables quick and hassle-free check-ins on the day of the event.",
+        },
+      ],
+      technologiesUsed: [
+        {
+          header: "Next.js",
+          point:
+            "Used as the full-stack framework for a seamless user experience.",
+        },
+        {
+          header: "Supabase",
+          point:
+            "Serves as the database for efficiently storing and retrieving attendee data.",
+        },
+        {
+          header: "Drizzle ORM",
+          point: "Ensures structured and efficient database interactions.",
+        },
+        {
+          header: "Serverless Functions",
+          point: "Used for scalable API handling and backend logic execution.",
+        },
+        {
+          header: "Webhooks",
+          point:
+            "Implemented for real-time payment verification and instant attendee notifications.",
+        },
+      ],
+    },
+    {
       title: "Note Vault",
       outcome:
-        "Developed an efficent and secure note repository for my college.",
+        "Developed an efficient and secure note repository for my college.",
       p: [
         "The Note Vault is a user-friendly web application designed to serve as a centralized hub for storing and accessing college notes. It aims to streamline the organization and accessibility of academic materials for students. Built using Next.js, Tailwind CSS, and NextUI component library, this platform offers a seamless experience for storing lecture notes, past papers, and study resources.",
         "The primary goal of the CollegeNote Repository is to simplify the management of academic resources for students. By offering a user-centric platform with an intuitive interface and organized storage, students can easily access and utilize notes and past question papers to enhance their learning and preparation.",
@@ -140,12 +203,12 @@ export const siteConfig = {
           point: "For efficient server-side rendering and routing.",
         },
         {
-          header: "Tailwind",
+          header: "Tailwind CSS",
           point:
             "Provides a utility-first CSS framework for styling components.",
         },
         {
-          header: "Responsive Design",
+          header: "NextUI",
           point:
             "Leveraged for pre-designed components, enhancing the app's interface and functionality.",
         },

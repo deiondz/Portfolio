@@ -7,8 +7,11 @@ import { useGlobalContext } from "@contexts/WorkContext";
 function Page({ params }) {
   const { setData } = useGlobalContext();
   const pageData = siteConfig.work.find(
-    (page) => page.title.replace(" ", "-") === params.slug
+    (page) =>
+      page.title.toLowerCase().replace(/\s+/g, "-") ===
+      params.slug.toLowerCase()
   );
+
   useEffect(() => {
     setData(pageData);
   }, [setData, pageData]);

@@ -14,9 +14,9 @@ export default function NowView() {
         className="p-0 min-h-28 bg-neutral-700"
       >
         <CardBody>
-          <h1 className="text-large text-neutral-200">{data.title}</h1>
+          <h1 className="text-large text-neutral-200">{data?.title}</h1>
           <p className="overflow-hidden text-sm text-neutral-400 line-clamp-3">
-            {data.description}
+            {data?.description}
           </p>
         </CardBody>
       </Card>
